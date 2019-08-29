@@ -1,0 +1,113 @@
+<!-- /sections/list-collections.liquid -->
+
+{% case section.settings.grid %}
+  {% when 1 %}
+    {% assign grid_width = 'one-whole' %}
+  {% when 2 %}
+    {% assign grid_width = 'one-half small--one-whole' %}
+  {% when 3 %}
+    {% assign grid_width = 'one-third small--one-whole' %}
+  {% else %}
+    {% assign grid_width = 'one-quarter small--one-whole' %}
+{% endcase %}
+
+{%- assign heading = section.settings.title -%}
+
+<section class="index-list-collections" data-section-id="{{ section.id }}" data-section-type="list-collections">
+  {% if heading != blank %}
+  <h2 class="theme coll-heading">{{ heading }}</h2>
+  {% endif %}
+
+  <div class="container">
+    <div class="collection-list">
+      {% if section.settings.display_type == 'all' %}
+        {% for collection in collections %}
+          {% unless collection.handle == 'frontpage' %}
+            {% assign collection_title = block.settings.title %}
+            {% assign grid_int = section.settings.grid | times:1 %}
+            {% assign animation_delay = forloop.index0  | modulo:grid_int | times:1 %}
+
+            {% include 'collection-list-item' %}
+
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {% for block in section.blocks %}
+          {% assign collection = collections[block.settings.collection] %}
+          {% assign collection_title = block.settings.title %}
+          {% assign grid_int = section.settings.grid | times:1 %}
+          {% assign animation_delay = forloop.index0  | modulo:grid_int | times:1 %}
+
+          {% include 'collection-list-item' %}
+
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Collection list",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "All of your collections are listed by default. To customize your list, choose 'Selected' and add collections."
+    },
+    {
+      "type": "radio",
+      "id": "display_type",
+      "label": "Select collections to show",
+      "default": "all",
+      "options": [
+        {
+          "value": "all",
+          "label": "All"
+        },
+        {
+          "value": "selected",
+          "label": "Selected"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Collections"
+    },
+    {
+      "type": "header",
+      "content": "Collection grid"
+    },
+    {
+      "type":    "range",
+      "id":      "grid",
+      "min":     1,
+      "max":     6,
+      "step":    1,
+      "label":   "Collections per row",
+      "default": 4
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "label": "Collection",
+          "id": "collection",
+          "type": "collection"
+        },
+        {
+          "label": "Title",
+          "id": "title",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

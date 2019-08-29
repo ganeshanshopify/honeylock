@@ -1,0 +1,27 @@
+<!-- /snippets/products-recently-viewed.liquid -->
+
+<div class="recent__wrapper" id="RecentlyViewed">
+  <h2 class="recent__title theme">{{ 'products.general.recently_viewed' | t }}</h2>
+  <div class="recent__content product-grid" id="recently-viewed-products" style="display:none">
+
+
+  </div>
+</div>
+
+{% raw %}
+  <script id="recently-viewed-product-template" type="text/x-jquery-tmpl">
+
+    <div class="product-item one-quarter small--one-half">
+      <a class="product-link" href="${url}">
+        <div class="product-item__image">
+          <div class="product-item__bg"
+            style="background-image:url(${Shopify.resizeImage(featured_image, "600x")});">
+          </div>
+        </div>
+        <div class="product-information">
+          <span class="title"><h5>${title}</h5></span>
+        </div>
+      </a>
+    </div>
+  </script>
+{% endraw %}

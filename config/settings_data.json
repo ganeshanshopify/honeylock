@@ -1,0 +1,1371 @@
+{
+  "current": {
+    "text_color": "#444444",
+    "bg_color": "#ffffff",
+    "secondary_bg_color": "#f7f7f7",
+    "accent_bright": "#ffebe7",
+    "accent_secondary": "#ffebe7",
+    "site_border_color": "#f0f0f0",
+    "link_color": "#545454",
+    "link_hover_color": "#000000",
+    "header_bg": "#ffffff",
+    "header_link": "#545454",
+    "header_link_hover": "#000000",
+    "menu_bg_color": "#ffffff",
+    "menu_border_color": "#f0f0f0",
+    "menu_link_color": "#545454",
+    "menu_link_hover_color": "#000000",
+    "submenu_bg_color": "#ffffff",
+    "submenu_link_color": "#545454",
+    "submenu_link_hover_color": "#000000",
+    "footer_bg": "#fffaf9",
+    "footer_text": "#545454",
+    "footer_link": "#545454",
+    "footer_link_hover": "#000000",
+    "type_heading_font": "roboto_slab_n4",
+    "type_heading_size": 80,
+    "type_base_font": "raleway_n4",
+    "type_body_size": 95,
+    "button_border_radius": 0,
+    "animations_enable": true,
+    "enable_disqus": false,
+    "disqus_shortname": "",
+    "enable_product_reviews": false,
+    "enable_yotpo": false,
+    "yotpo_ID": "",
+    "instagram_link": "https:\/\/instagram.com\/honeylock.co",
+    "facebook_link": "https:\/\/www.facebook.com\/honeylock.co\/",
+    "twitter_link": "",
+    "youtube_link": "",
+    "vimeo_link": "",
+    "pinterest_link": "https:\/\/www.pinterest.com\/honeylock_personalized_jewelry\/",
+    "tumblr_link": "",
+    "atom_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_home_image": "",
+    "color_swatches": true,
+    "image_hover_enable": true,
+    "product_grid_aspect_ratio": 1,
+    "sale_tags_enable": true,
+    "sale_background_color": "#ff8c8c",
+    "sale_text_color": "#ffffff",
+    "quickview_enable": false,
+    "quickview_buybutton_enable": true,
+    "show_promo_modal": false,
+    "promo_dev_mode": false,
+    "promo_modal_subtitle": "Broadcast",
+    "promo_modal_title": "Newsletter",
+    "promo_modal_richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+    "promo_button_text": "Join",
+    "promo_image": "",
+    "promo_bg_color": "#fff",
+    "promo_text_color": "dark",
+    "favicon": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#444444",
+    "checkout_button_color": "#ffebe7",
+    "checkout_error_color": "#c85c42",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_image": "",
+          "logo_image_width": 310,
+          "show_header_social": true,
+          "show_header_search": true,
+          "header_search_products": true,
+          "show_account": true,
+          "message": true,
+          "message_text": "Free shipping ☺",
+          "message_detail": "on all us orders",
+          "message_link": "",
+          "color_bg": "#ffebe7",
+          "color_text": "#545454",
+          "menu_primary": "main-menu"
+        }
+      },
+      "product": {
+        "type": "product",
+        "blocks": {
+          "1555367867021": {
+            "type": "tab_description",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "1555367867021"
+        ],
+        "settings": {
+          "image_layout": "stacked",
+          "product_sticky_enable": true,
+          "show_breadcrumbs": true,
+          "show_share_buttons": true,
+          "product_show_vendor": false,
+          "show_payment_button": true,
+          "show_recently_viewed": true,
+          "tabs_enable": true,
+          "ring_size_guide": "shopify:\/\/shop_images\/ring.png",
+          "bracelet_size_guide": "",
+          "necklace_size_guide": "shopify:\/\/shop_images\/necklace.png"
+        }
+      },
+      "page-contact": {
+        "type": "page-contact",
+        "blocks": {
+          "contact-1": {
+            "type": "text",
+            "settings": {
+              "title": "Full Name"
+            }
+          },
+          "contact-2": {
+            "type": "email",
+            "settings": {
+              "title": "Email"
+            }
+          },
+          "contact-3": {
+            "type": "body",
+            "settings": {
+              "title": "Message"
+            }
+          },
+          "contact-4": {
+            "type": "spacer",
+            "settings": {
+              "line": false
+            }
+          },
+          "contact-5": {
+            "type": "formHeading",
+            "settings": {
+              "title": "Optional:"
+            }
+          },
+          "contact-6": {
+            "type": "checkbox",
+            "settings": {
+              "title": "Subscribe to the newsletter"
+            }
+          },
+          "contact-7": {
+            "type": "select",
+            "settings": {
+              "title": "How did you hear about us:",
+              "label-one": "- Pick an option -",
+              "label-two": "Instagram \/ Facebook",
+              "label-three": "Web search",
+              "label-four": "Print Ad",
+              "label-five": "From a friend",
+              "label-six": ""
+            }
+          }
+        },
+        "block_order": [
+          "contact-1",
+          "contact-2",
+          "contact-3",
+          "contact-4",
+          "contact-5",
+          "contact-6",
+          "contact-7"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "index-hero": {
+        "type": "index-hero",
+        "settings": {
+          "image": "",
+          "parallax": false,
+          "height": "image-height",
+          "overlay_opacity": 0,
+          "overlay_color": "#fff",
+          "title": "",
+          "description": "",
+          "flex_align": "align--middle-center",
+          "text_color": "text-dark",
+          "transparent": true,
+          "link_text": "",
+          "link": "https:\/\/honeylock.co\/collections\/vintage-lockets\/products\/gold-custom-heart-locket",
+          "button_image": ""
+        }
+      },
+      "index-image-with-text": {
+        "type": "index-image-with-text",
+        "settings": {
+          "title": "A Forever Promise",
+          "content": "<p>A special gift for that special someone.&nbsp;<\/p>",
+          "color": "#545454",
+          "background": "#f7f7f7",
+          "image": "",
+          "height": "image-height",
+          "image_alignment": "natural",
+          "overlay_opacity": 0,
+          "overlay_color": "#fff",
+          "button_text": "",
+          "button_link": "",
+          "video_link": "",
+          "button_type": "filled",
+          "button_colors": "#fff"
+        }
+      },
+      "index-products": {
+        "type": "index-products",
+        "settings": {
+          "featured_collection": "",
+          "title": "Featured collection",
+          "grid": 4,
+          "rows": 1,
+          "enable_reviews": false,
+          "scroll": "horizontally",
+          "arrows_style": "dark"
+        }
+      },
+      "index-blog": {
+        "type": "index-blog",
+        "settings": {
+          "blog_name": "news",
+          "title": "Blog posts",
+          "blog_text": "",
+          "grid": 3,
+          "rows": 1,
+          "show_author": false,
+          "show_date": false,
+          "show_button": true,
+          "show_tags": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1555367778139": {
+            "type": "linklist",
+            "settings": {
+              "linklist": ""
+            }
+          },
+          "1555367788133": {
+            "type": "linklist",
+            "settings": {
+              "linklist": "footer"
+            }
+          },
+          "1555368148037": {
+            "type": "social",
+            "settings": {
+              "title": "Follow Us!",
+              "richtext": "<p><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1555367778139",
+          "1555367788133",
+          "1555368148037"
+        ],
+        "settings": {
+          "footer_logo": "",
+          "logo_image_width": 50,
+          "image": "",
+          "overlay_opacity": 15,
+          "overlay_color": "#000",
+          "footer_secondary_linklist": "",
+          "footer_payment_enable": false,
+          "footer_hide_credit": true
+        }
+      },
+      "1555367309388": {
+        "type": "index-image-with-text",
+        "settings": {
+          "title": "Personalized Necklace",
+          "content": "<p>Add a personal touch to your jewelry by engraving your heartfelt messages, names, or dates.<\/p>",
+          "color": "#282c2e",
+          "background": "#f7f9fa",
+          "image": "",
+          "height": "image-height",
+          "image_alignment": "reverse",
+          "overlay_opacity": 15,
+          "overlay_color": "#fff",
+          "button_text": "",
+          "button_link": "",
+          "video_link": "",
+          "button_type": "filled",
+          "button_colors": "#fff"
+        }
+      },
+      "1555367372187": {
+        "type": "index-products",
+        "settings": {
+          "featured_collection": "",
+          "title": "Featured collection",
+          "grid": 4,
+          "rows": 1,
+          "enable_reviews": false,
+          "scroll": "horizontally",
+          "arrows_style": "dark"
+        }
+      },
+      "1555368135867": {
+        "type": "index-newsletter",
+        "settings": {
+          "title": "Newsletter",
+          "richtext": "<p>Subscribe to get special offers, free giveaways, and sweet savings!<\/p>",
+          "width": "full",
+          "flex_align": "align--middle-center",
+          "text_color": "dark",
+          "height": "screen-height-one-third",
+          "bg_image": "",
+          "overlay_opacity": 0,
+          "overlay_color": "#fff"
+        }
+      },
+      "cart": {
+        "type": "cart",
+        "settings": {
+          "allow_note": true,
+          "allow_tax_text": true,
+          "custom_tax_text": "",
+          "shipping_calculator": false,
+          "shipping_calculator_default_country": "United States",
+          "cart_show_additional_buttons": false
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "enable_sort": false,
+          "collection_tags": false,
+          "show_title": true,
+          "show_description": true,
+          "text_color": "text-dark",
+          "flex_align": "align--middle-left",
+          "transparent": false,
+          "show_image": true,
+          "height": "screen-height-one-third",
+          "parallax": false,
+          "overlay_opacity": 0,
+          "overlay_color": "#000",
+          "grid": 4,
+          "enable_reviews": false
+        }
+      },
+      "1556900960503": {
+        "type": "index-instagram",
+        "settings": {
+          "title": "",
+          "token": "4823551096.b534787.6c6e34b056fa44c780b1aa6b86c9cbfc",
+          "instagram_photo_count": 4,
+          "instagram_grid_setting_large": 4,
+          "instagram_grid_setting_medium": 4,
+          "instagram_grid_setting_small": 2
+        }
+      },
+      "1556901230985": {
+        "type": "index-rich-text",
+        "settings": {
+          "logo": "",
+          "title": "Get Inspired",
+          "text": "<p>#myhoneylock<\/p>",
+          "button_text": "",
+          "button_url": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "index-hero",
+      "index-products",
+      "index-image-with-text",
+      "1555367372187",
+      "1555367309388",
+      "index-blog",
+      "1556901230985",
+      "1556900960503",
+      "1555368135867"
+    ]
+  },
+  "presets": {
+    "Clean": {
+      "text_color": "#545454",
+      "bg_color": "#ffffff",
+      "secondary_bg_color": "#F7F7F7",
+      "accent_bright": "#b1945c",
+      "accent_secondary": "#8191a4",
+      "site_border_color": "#F0F0F0",
+      "link_color": "#545454",
+      "link_hover_color": "#b1945c",
+      "header_bg": "#ffffff",
+      "header_link": "#545454",
+      "header_link_hover": "#b1945c",
+      "menu_bg_color": "#ffffff",
+      "menu_border_color": "#F0F0F0",
+      "menu_link_color": "#545454",
+      "menu_link_hover_color": "#b1945c",
+      "submenu_bg_color": "#ffffff",
+      "submenu_link_color": "#545454",
+      "submenu_link_hover_color": "#c5aa76",
+      "footer_bg": "#ffffff",
+      "footer_text": "#545454",
+      "footer_link": "#545454",
+      "footer_link_hover": "#b1945c",
+      "type_heading_font": "century_gothic_n7",
+      "type_heading_size": 80,
+      "type_base_font": "century_gothic_n4",
+      "type_body_size": 95,
+      "animations_enable": true,
+      "image_hover_enable": true,
+      "sale_tags_enable": true,
+      "sale_background_color": "#be563f",
+      "sale_text_color": "#ffffff",
+      "show_promo_modal": false,
+      "promo_dev_mode": false,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Open Sans",
+      "checkout_body_font": "Open Sans",
+      "checkout_accent_color": "#c5aa76",
+      "checkout_button_color": "#c5aa76",
+      "checkout_error_color": "#c85c42",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_header_social": true,
+            "show_header_search": true,
+            "show_account": true,
+            "message": false,
+            "color_bg": "#efeeec",
+            "color_text": "#545454",
+            "menu_primary": "main-menu"
+          }
+        },
+        "product": {
+          "type": "product",
+          "blocks": {
+            "product-tab-1": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "First",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            },
+            "product-tab-2": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "Second",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            },
+            "product-tab-3": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "Third",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "product-tab-1",
+            "product-tab-2",
+            "product-tab-3"
+          ],
+          "settings": {
+            "image_layout": "stacked",
+            "product_sticky_enable": true,
+            "show_breadcrumbs": true,
+            "show_share_buttons": true,
+            "product_show_vendor": false,
+            "show_payment_button": true,
+            "show_recently_viewed": true,
+            "tabs_enable": true
+          }
+        },
+        "page-contact": {
+          "type": "page-contact",
+          "blocks": {
+            "contact-1": {
+              "type": "text",
+              "settings": {
+                "title": "Full Name"
+              }
+            },
+            "contact-2": {
+              "type": "email",
+              "settings": {
+                "title": "Email"
+              }
+            },
+            "contact-3": {
+              "type": "body",
+              "settings": {
+                "title": "Message"
+              }
+            },
+            "contact-4": {
+              "type": "spacer",
+              "settings": {
+                "line": false
+              }
+            },
+            "contact-5": {
+              "type": "formHeading",
+              "settings": {
+                "title": "Optional:"
+              }
+            },
+            "contact-6": {
+              "type": "checkbox",
+              "settings": {
+                "title": "Subscribe to the newsletter"
+              }
+            },
+            "contact-7": {
+              "type": "select",
+              "settings": {
+                "title": "How did you hear about us:",
+                "label-one": "- Pick an option -",
+                "label-two": "Instagram \/ Facebook",
+                "label-three": "Web search",
+                "label-four": "Print Ad",
+                "label-five": "From a friend",
+                "label-six": ""
+              }
+            }
+          },
+          "block_order": [
+            "contact-1",
+            "contact-2",
+            "contact-3",
+            "contact-4",
+            "contact-5",
+            "contact-6",
+            "contact-7"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "index-hero": {
+          "type": "index-hero",
+          "settings": {
+            "parallax": false,
+            "height": "screen-height-two-thirds",
+            "overlay_opacity": 0,
+            "flex_align": "align--middle-center",
+            "text_color": "text-dark"
+          }
+        },
+        "index-image-with-text": {
+          "type": "index-image-with-text",
+          "settings": {
+            "color": "#545454",
+            "background": "#f7f7f7",
+            "height": "screen-height-one-half",
+            "overlay_opacity": 0
+          }
+        },
+        "index-map": {
+          "type": "index-map",
+          "settings": {}
+        },
+        "index-slideshow": {
+          "type": "index-slideshow",
+          "blocks": {
+            "index-slideshow-0": {
+              "type": "image",
+              "settings": {
+                "overlay_opacity": 0,
+                "text_color": "text-dark"
+              }
+            },
+            "index-slideshow-1": {
+              "type": "image",
+              "settings": {
+                "overlay_opacity": 0,
+                "text_color": "text-dark"
+              }
+            }
+          },
+          "block_order": [
+            "index-slideshow-0",
+            "index-slideshow-1"
+          ],
+          "settings": {
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "height": "screen-height-one-half"
+          }
+        },
+        "index-collections-list": {
+          "type": "index-collections-list",
+          "blocks": {
+            "index-collections-list-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-3": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-collections-list-0",
+            "index-collections-list-1",
+            "index-collections-list-2",
+            "index-collections-list-3"
+          ],
+          "settings": {
+            "title": "Collections"
+          }
+        },
+        "index-background-video": {
+          "type": "index-background-video",
+          "settings": {
+            "overlay_opacity": 65
+          }
+        },
+        "index-look": {
+          "type": "index-look",
+          "blocks": {
+            "index-look-0": {
+              "type": "instagram_product",
+              "settings": {}
+            },
+            "index-look-1": {
+              "type": "instagram_product",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-look-0",
+            "index-look-1"
+          ],
+          "settings": {}
+        },
+        "index-testimonials": {
+          "type": "index-testimonials",
+          "blocks": {
+            "index-testimonial-0": {
+              "type": "testimonial",
+              "settings": {
+                "title": "Mark Corrigan"
+              }
+            },
+            "index-testimonial-1": {
+              "type": "testimonial",
+              "settings": {
+                "title": "Jeremy Usborne"
+              }
+            }
+          },
+          "block_order": [
+            "index-testimonial-0",
+            "index-testimonial-1"
+          ],
+          "settings": {}
+        },
+        "index-products": {
+          "type": "index-products",
+          "settings": {}
+        },
+        "index-blog": {
+          "type": "index-blog",
+          "settings": {}
+        },
+        "index-rich-text": {
+          "type": "index-rich-text",
+          "settings": {}
+        },
+        "index-instagram": {
+          "type": "index-instagram",
+          "settings": {}
+        },
+        "index-newsletter": {
+          "type": "index-newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "index-hero",
+        "index-collections-list",
+        "index-image-with-text",
+        "index-products",
+        "index-testimonials",
+        "index-map",
+        "index-background-video",
+        "index-rich-text",
+        "index-slideshow",
+        "index-blog",
+        "index-instagram",
+        "index-look",
+        "index-newsletter"
+      ]
+    },
+    "Modern": {
+      "text_color": "#2b2b2b",
+      "bg_color": "#ffffff",
+      "secondary_bg_color": "#f7f9fa",
+      "accent_bright": "#007efc",
+      "accent_secondary": "#2B2B2B",
+      "site_border_color": "#f3f3f3",
+      "link_color": "#2b333b",
+      "link_hover_color": "#007efc",
+      "header_bg": "#ffffff",
+      "header_link": "#3b434b",
+      "header_link_hover": "#007efc",
+      "menu_bg_color": "#2b2b2b",
+      "menu_border_color": "#2b2b2b",
+      "menu_link_color": "#ffffff",
+      "menu_link_hover_color": "#c8e4f2",
+      "submenu_bg_color": "#2b2b2b",
+      "submenu_link_color": "#ffffff",
+      "submenu_link_hover_color": "#c8e4f2",
+      "footer_bg": "#1f1f1f",
+      "footer_text": "#ffffff",
+      "footer_link": "#e1e1e1",
+      "footer_link_hover": "#808080",
+      "type_heading_font": "monotype_news_gothic_n4",
+      "type_heading_size": 100,
+      "type_base_font": "monotype_news_gothic_n4",
+      "type_body_size": 95,
+      "animations_enable": false,
+      "image_hover_enable": false,
+      "sale_tags_enable": true,
+      "sale_background_color": "#ed6161",
+      "sale_text_color": "#ffffff",
+      "show_promo_modal": false,
+      "promo_dev_mode": false,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Open Sans",
+      "checkout_body_font": "Open Sans",
+      "checkout_accent_color": "#007efc",
+      "checkout_button_color": "#007efc",
+      "checkout_error_color": "#ed6161",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_header_social": true,
+            "show_header_search": true,
+            "show_account": true,
+            "message": false,
+            "color_bg": "#efeeec",
+            "color_text": "#545454",
+            "menu_primary": "main-menu"
+          }
+        },
+        "product": {
+          "type": "product",
+          "blocks": {
+            "product-tab-1": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "First",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            },
+            "product-tab-2": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "Second",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            },
+            "product-tab-3": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "Third",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "product-tab-1",
+            "product-tab-2",
+            "product-tab-3"
+          ],
+          "settings": {
+            "image_layout": "thumbnails",
+            "product_sticky_enable": false,
+            "show_breadcrumbs": true,
+            "show_share_buttons": false,
+            "product_show_vendor": false,
+            "show_payment_button": true,
+            "show_recently_viewed": true,
+            "tabs_enable": false
+          }
+        },
+        "page-contact": {
+          "type": "page-contact",
+          "blocks": {
+            "contact-1": {
+              "type": "text",
+              "settings": {
+                "title": "Full Name"
+              }
+            },
+            "contact-2": {
+              "type": "email",
+              "settings": {
+                "title": "Email"
+              }
+            },
+            "contact-3": {
+              "type": "body",
+              "settings": {
+                "title": "Message"
+              }
+            },
+            "contact-4": {
+              "type": "spacer",
+              "settings": {
+                "line": false
+              }
+            },
+            "contact-5": {
+              "type": "formHeading",
+              "settings": {
+                "title": "Optional:"
+              }
+            },
+            "contact-6": {
+              "type": "checkbox",
+              "settings": {
+                "title": "Subscribe to the newsletter"
+              }
+            },
+            "contact-7": {
+              "type": "select",
+              "settings": {
+                "title": "How did you hear about us:",
+                "label-one": "- Pick an option -",
+                "label-two": "Instagram \/ Facebook",
+                "label-three": "Web search",
+                "label-four": "Print Ad",
+                "label-five": "From a friend",
+                "label-six": ""
+              }
+            }
+          },
+          "block_order": [
+            "contact-1",
+            "contact-2",
+            "contact-3",
+            "contact-4",
+            "contact-5",
+            "contact-6",
+            "contact-7"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "index-hero": {
+          "type": "index-hero",
+          "settings": {
+            "parallax": false,
+            "height": "screen-height-two-thirds",
+            "overlay_opacity": 0,
+            "flex_align": "align--middle-center",
+            "text_color": "text-dark"
+          }
+        },
+        "index-image-with-text": {
+          "type": "index-image-with-text",
+          "settings": {
+            "color": "#282c2e",
+            "background": "#f7f9fa",
+            "height": "screen-height-one-half",
+            "overlay_opacity": 0
+          }
+        },
+        "index-map": {
+          "type": "index-map",
+          "settings": {}
+        },
+        "index-slideshow": {
+          "type": "index-slideshow",
+          "blocks": {
+            "index-slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "index-slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-slideshow-0",
+            "index-slideshow-1"
+          ],
+          "settings": {
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "height": "screen-height-one-half"
+          }
+        },
+        "index-collections-list": {
+          "type": "index-collections-list",
+          "blocks": {
+            "index-collections-list-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-3": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-collections-list-0",
+            "index-collections-list-1",
+            "index-collections-list-2",
+            "index-collections-list-3"
+          ],
+          "settings": {
+            "title": "Collections"
+          }
+        },
+        "index-background-video": {
+          "type": "index-background-video",
+          "settings": {
+            "overlay_opacity": 65
+          }
+        },
+        "index-look": {
+          "type": "index-look",
+          "blocks": {
+            "index-look-0": {
+              "type": "instagram_product",
+              "settings": {}
+            },
+            "index-look-1": {
+              "type": "instagram_product",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-look-0",
+            "index-look-1"
+          ],
+          "settings": {}
+        },
+        "index-testimonials": {
+          "type": "index-testimonials",
+          "blocks": {
+            "index-testimonial-0": {
+              "type": "testimonial",
+              "settings": {
+                "title": "Mark Corrigan"
+              }
+            },
+            "index-testimonial-1": {
+              "type": "testimonial",
+              "settings": {
+                "title": "Jeremy Usborne"
+              }
+            }
+          },
+          "block_order": [
+            "index-testimonial-0",
+            "index-testimonial-1"
+          ],
+          "settings": {}
+        },
+        "index-products": {
+          "type": "index-products",
+          "settings": {}
+        },
+        "index-blog": {
+          "type": "index-blog",
+          "settings": {}
+        },
+        "index-rich-text": {
+          "type": "index-rich-text",
+          "settings": {}
+        },
+        "index-instagram": {
+          "type": "index-instagram",
+          "settings": {}
+        },
+        "index-newsletter": {
+          "type": "index-newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "index-hero",
+        "index-collections-list",
+        "index-image-with-text",
+        "index-products",
+        "index-testimonials",
+        "index-map",
+        "index-background-video",
+        "index-rich-text",
+        "index-slideshow",
+        "index-blog",
+        "index-instagram",
+        "index-look",
+        "index-newsletter"
+      ]
+    },
+    "Bold": {
+      "text_color": "#2d2d2d",
+      "bg_color": "#ffffff",
+      "secondary_bg_color": "#f5f2ef",
+      "accent_bright": "#d1759c",
+      "accent_secondary": "#d1a775",
+      "site_border_color": "#edeae6",
+      "link_color": "#193b68",
+      "link_hover_color": "#3f579c",
+      "header_bg": "#1a2430",
+      "header_link": "#ffffff",
+      "header_link_hover": "#e8d0da",
+      "menu_bg_color": "#222b37",
+      "menu_border_color": "#131c28",
+      "menu_link_color": "#ffffff",
+      "menu_link_hover_color": "#e8d0da",
+      "submenu_bg_color": "#222b37",
+      "submenu_link_color": "#ffffff",
+      "submenu_link_hover_color": "#e8d0da",
+      "footer_bg": "#1a2430",
+      "footer_text": "#ffffff",
+      "footer_link": "#ffffff",
+      "footer_link_hover": "#d1759c",
+      "type_heading_font": "itc_bodoni_twelve_n7",
+      "type_heading_size": 95,
+      "type_base_font": "montserrat_n4",
+      "type_body_size": 90,
+      "animations_enable": true,
+      "image_hover_enable": false,
+      "sale_tags_enable": true,
+      "sale_background_color": "#e03386",
+      "sale_text_color": "#ffffff",
+      "show_promo_modal": false,
+      "promo_dev_mode": false,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Open Sans",
+      "checkout_body_font": "Open Sans",
+      "checkout_accent_color": "#3F579C",
+      "checkout_button_color": "#3F579C",
+      "checkout_error_color": "#D1759C",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_header_social": true,
+            "show_header_search": true,
+            "show_account": true,
+            "message": false,
+            "color_bg": "#101A26",
+            "color_text": "#EEEEEE",
+            "menu_primary": "main-menu"
+          }
+        },
+        "product": {
+          "type": "product",
+          "blocks": {
+            "product-tab-1": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "First",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            },
+            "product-tab-2": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "Second",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            },
+            "product-tab-3": {
+              "type": "tab_richtext",
+              "settings": {
+                "title": "Third",
+                "raw_content": "<p>This tab content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "product-tab-1",
+            "product-tab-2",
+            "product-tab-3"
+          ],
+          "settings": {
+            "image_layout": "stacked",
+            "product_sticky_enable": true,
+            "show_breadcrumbs": true,
+            "show_share_buttons": true,
+            "product_show_vendor": false,
+            "show_payment_button": true,
+            "show_recently_viewed": true,
+            "tabs_enable": true
+          }
+        },
+        "page-contact": {
+          "type": "page-contact",
+          "blocks": {
+            "contact-1": {
+              "type": "text",
+              "settings": {
+                "title": "Full Name"
+              }
+            },
+            "contact-2": {
+              "type": "email",
+              "settings": {
+                "title": "Email"
+              }
+            },
+            "contact-3": {
+              "type": "body",
+              "settings": {
+                "title": "Message"
+              }
+            },
+            "contact-4": {
+              "type": "spacer",
+              "settings": {
+                "line": false
+              }
+            },
+            "contact-5": {
+              "type": "formHeading",
+              "settings": {
+                "title": "Optional:"
+              }
+            },
+            "contact-6": {
+              "type": "checkbox",
+              "settings": {
+                "title": "Subscribe to the newsletter"
+              }
+            },
+            "contact-7": {
+              "type": "select",
+              "settings": {
+                "title": "How did you hear about us:",
+                "label-one": "- Pick an option -",
+                "label-two": "Instagram \/ Facebook",
+                "label-three": "Web search",
+                "label-four": "Print Ad",
+                "label-five": "From a friend",
+                "label-six": ""
+              }
+            }
+          },
+          "block_order": [
+            "contact-1",
+            "contact-2",
+            "contact-3",
+            "contact-4",
+            "contact-5",
+            "contact-6",
+            "contact-7"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "index-hero": {
+          "type": "index-hero",
+          "settings": {
+            "parallax": false,
+            "height": "screen-height-two-thirds",
+            "overlay_opacity": 0,
+            "flex_align": "align--middle-center",
+            "text_color": "text-dark"
+          }
+        },
+        "index-image-with-text": {
+          "type": "index-image-with-text",
+          "settings": {
+            "color": "#2d2d2d",
+            "background": "#f5f2ef",
+            "height": "screen-height-one-half",
+            "overlay_opacity": 0
+          }
+        },
+        "index-map": {
+          "type": "index-map",
+          "settings": {}
+        },
+        "index-slideshow": {
+          "type": "index-slideshow",
+          "blocks": {
+            "index-slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "index-slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-slideshow-0",
+            "index-slideshow-1"
+          ],
+          "settings": {
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "height": "screen-height-one-half"
+          }
+        },
+        "index-collections-list": {
+          "type": "index-collections-list",
+          "blocks": {
+            "index-collections-list-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "index-collections-list-3": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-collections-list-0",
+            "index-collections-list-1",
+            "index-collections-list-2",
+            "index-collections-list-3"
+          ],
+          "settings": {
+            "title": "Collections"
+          }
+        },
+        "index-background-video": {
+          "type": "index-background-video",
+          "settings": {
+            "overlay_opacity": 65
+          }
+        },
+        "index-look": {
+          "type": "index-look",
+          "blocks": {
+            "index-look-0": {
+              "type": "instagram_product",
+              "settings": {}
+            },
+            "index-look-1": {
+              "type": "instagram_product",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "index-look-0",
+            "index-look-1"
+          ],
+          "settings": {}
+        },
+        "index-testimonials": {
+          "type": "index-testimonials",
+          "blocks": {
+            "index-testimonial-0": {
+              "type": "testimonial",
+              "settings": {
+                "title": "Mark Corrigan"
+              }
+            },
+            "index-testimonial-1": {
+              "type": "testimonial",
+              "settings": {
+                "title": "Jeremy Usborne"
+              }
+            }
+          },
+          "block_order": [
+            "index-testimonial-0",
+            "index-testimonial-1"
+          ],
+          "settings": {}
+        },
+        "index-products": {
+          "type": "index-products",
+          "settings": {}
+        },
+        "index-blog": {
+          "type": "index-blog",
+          "settings": {}
+        },
+        "index-rich-text": {
+          "type": "index-rich-text",
+          "settings": {}
+        },
+        "index-instagram": {
+          "type": "index-instagram",
+          "settings": {}
+        },
+        "index-newsletter": {
+          "type": "index-newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "index-hero",
+        "index-collections-list",
+        "index-image-with-text",
+        "index-products",
+        "index-testimonials",
+        "index-map",
+        "index-background-video",
+        "index-rich-text",
+        "index-slideshow",
+        "index-blog",
+        "index-instagram",
+        "index-look",
+        "index-newsletter"
+      ]
+    }
+  }
+}

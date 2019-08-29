@@ -1,0 +1,106 @@
+<!-- /snippets/product-form.liquid -->
+
+{% assign enable_swatches = settings.color_swatches %}
+
+ {% form 'product', product, class: 'product-form', data-swatches: enable_swatches %}
+  {% unless product.has_only_default_variant %}
+    <div class="product__selectors swatch--{{ product.id }}">
+      {% if enable_swatches %}
+        {% include 'swatch' with 'Color' %}
+      {% endif %}
+
+      {% for option in product.options_with_values %}
+        <div class="selector-wrapper js" data-option="option{{ option.position }}">
+          <label for="SingleOptionSelector-{{ forloop.index0 }}-{{product.id}}">
+            {{ option.name }}
+          </label>
+
+          <select
+            id="SingleOptionSelector-{{ forloop.index0 }}-{{product.id}}"
+            data-single-option-selector
+            data-index="option{{ option.position }}">
+            {% for value in option.values %}
+              <option
+                value="{{ value | escape }}"
+                {% if option.selected_value == value %}selected="selected"{% endif %}>
+                  {{ value }}
+              </option>
+            {% endfor %}
+          </select>
+        </div>
+      {% endfor %}
+    </div>
+  {% endunless %}
+
+  <select name="id" class="no-js" data-product-select>
+    {% for variant in product.variants %}
+      <option
+        {% if variant == current_variant %}selected="selected"{% endif %}
+        {% unless variant.available %}disabled="disabled"{% endunless %}
+        value="{{ variant.id }}">
+          {{ variant.title }}
+      </option>
+    {% endfor %}
+  </select>
+
+<!-- Infinite Options By ShopPad -->
+<div id="infiniteoptions-container"></div>
+<!-- Uploadery By ShopPad -->
+<div id="uploadery-container"></div>
+
+  <div class="js-qty quantity-selector">
+    <label for="Quantity" class="label-hidden">{{ 'products.product.quantity' | t }}</label>
+    <span class="js-qty__adjust js-qty__adjust--minus quantity__minus">{% include "icon-minus" %}</span>
+    <input type="text" class="js-qty__num quantity__input" value="1" min="1" aria-label="quantity" pattern="[0-9]*" name="quantity">
+    <span class="js-qty__adjust js-qty__adjust--plus quantity__plus">{% include "icon-plus" %}</span>
+  </div>
+
+  <div class="product__submit {% if buybutton_setting %}product__submit--spb{% endif %}" data-product-id="{{product.id}}">
+    <div class="product__submit__buttons">
+      {% comment %} <button
+        type="submit"
+        name="add"
+        class="btn add-js product__submit__add"
+        data-add-to-cart
+        {% unless current_variant.available %}disabled="disabled"{% endunless %}>
+          <span data-add-to-cart-text>
+            {% if current_variant.available %}
+              {{ 'products.product.add_to_cart' | t }}
+            {% else %}
+              {{ 'products.product.sold_out' | t }}
+            {% endif %}
+          </span>
+        </button> {% endcomment %}
+        <!-- START: add to card button -->
+        {% comment %} <div class="btn product__submit__add add-to-cart"> {% endcomment %}
+            <input class="btn product__submit__add add-to-cart add-to-cart-btn js-open-sidemenu-btn" type="button" value="Add to Cart">
+        {% comment %} </div> {% endcomment %}
+        <!-- END: add to cart button -->
+
+      {% if buybutton_setting %}
+        {{ form | payment_button }}
+      {% endif %}
+    </div>
+
+    <div class="product__add__success product__add__success--hide">
+      <div class="product__add__success__content form-success">
+        <span class="product__add__success__text">{{ 'products.product.added' | t: product: product.title }}</span>
+        <a href="/cart" class="btn btn--secondary btn--neutral">{{ 'layout.cart.title' | t }}</a>
+      </div>
+    </div>
+    <!-- START: Sale panel-->
+    <div class="sale-info-panel">
+      <input type="hidden" data-timerValue="{{section.settings.timer_value}}">
+      <div class="sale-timer-container">
+        <span class="sale-title">Sale Ends In</span>
+        <div class="sale-timer" id="countdown"></div>
+      </div>
+      <div class="size-guide-wrapper js-open-sidemenu-btn text--uppercase">
+        size guide <img style="width: 5px; margin-left: 7px;" src="{{'right-arrow.svg' | asset_url}}" alt="next"/>
+      </div>
+    </div>
+    <!--END: -->
+
+  </div>
+
+{% endform %}
