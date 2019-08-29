@@ -51,7 +51,7 @@
   <div class="js-qty quantity-selector">
     <label for="Quantity" class="label-hidden">{{ 'products.product.quantity' | t }}</label>
     <span class="js-qty__adjust js-qty__adjust--minus quantity__minus">{% include "icon-minus" %}</span>
-    <input type="text" class="js-qty__num quantity__input" value="1" min="1" aria-label="quantity" pattern="[0-9]*" name="quantity">
+    <input type="text" class="js-qty__num quantity__input quantity-customise" value="1" min="1" aria-label="quantity" pattern="[0-9]*" name="quantity">
     <span class="js-qty__adjust js-qty__adjust--plus quantity__plus">{% include "icon-plus" %}</span>
   </div>
 
@@ -72,9 +72,11 @@
           </span>
       </button>
 
-      {% if buybutton_setting %}
-        {{ form | payment_button }}
-      {% endif %}
+      {% comment %} 
+        {% if buybutton_setting %}
+          {{ form | payment_button }}
+        {% endif %}
+      {% endcomment %} 
     </div>
 
     <div class="product__add__success product__add__success--hide">
@@ -87,10 +89,10 @@
     <!-- START: Sale panel-->
     <div class="sale-info-panel">
       <input type="hidden" data-timerValue="{{section.settings.timer_value}}">
-      <div class="sale-timer-container">
+      <!-- <div class="sale-timer-container">
         <span class="sale-title">Sale Ends In</span>
         <div class="sale-timer" id="countdown"></div>
-      </div>
+      </div> -->
       <div class="size-guide-wrapper js-open-sidemenu-btn text--uppercase">
         size guide <img style="width: 5px; margin-left: 7px;" src="{{'right-arrow.svg' | asset_url}}" alt="next"/>
       </div>

@@ -128,7 +128,7 @@
               <meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
               <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
 
-              {% include 'product-form-image-and-engraving', buybutton_setting: section.settings.show_payment_button %}
+              {% include 'product-form-no-image-and-engraving', buybutton_setting: section.settings.show_payment_button %}
             </div>
 
             {%- assign description_position = '' -%}
@@ -179,7 +179,7 @@
     </div>
   </div>
   <!-- START: add to cart drawover cart -->
-  {% include 'snippet-add-to-cart-image-and-engrave' %}
+  {% include 'snippet-add-to-cart-no-image-and-engrave' %}
   <!-- END: add to cart drawover cart -->
   <!-- START: Dark overlay -->
     <div class="dark-overlay js-dark-overlay"></div>

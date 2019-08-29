@@ -7846,6 +7846,11 @@ $colorGiftBorder: $color_site_border;
   width: 100%;
   text-align: center;
 }
+
+.quantity-customise{
+  padding:11px 16px !important;
+}
+
 .quantity__plus{
   right: 0;
   justify-content: flex-end;
@@ -7995,11 +8000,22 @@ script,
     flex-flow: row wrap;
     align-items: flex-start;
     width: 100%;
+    position: relative;
   .shopify-payment-button,
   .product__submit__add{
-    margin: 10px 10px 0 0;
-    min-width: 155px;
+    margin: 0px 10px 0 0;
+    // min-width: 155px;
+    min-width: calc(100% - 8.6rem);
     flex: auto;
+    position: absolute;
+    bottom:5px;
+    right:0px;
+    // @include media-query($small){
+    //   min-width: 210px;
+    // }
+    @include media-query($large-down){
+      min-width: calc(100% - 8.8rem);
+    }
   }
 }
 
@@ -11740,11 +11756,11 @@ figure, figcaption {
   padding-top: 25px;
 }
 .size-guide-tag {
-  background: #FFCCA5;
+  background: #ffebe7;
   padding: 12px 25px;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: #000;
   display: inline-block;
   position: absolute;
   top: -22px;
@@ -11776,7 +11792,7 @@ figure, figcaption {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #FFCCA5;
+  background-color: #ffebe7;
 }
 .image-cover {
   height: 100%;
@@ -11811,9 +11827,10 @@ table.size-guide-table tr:nth-of-type(2n) {
 .size-guide-wrapper {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  // margin-left: auto;
   cursor: pointer;
   font-size: 12px;
+  font-weight:bold;
 }
 .sidebar-close-button {
   position: absolute;
@@ -12186,7 +12203,8 @@ label[for="arialFont"] {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .sale-title {
   position: relative;
@@ -12448,4 +12466,7 @@ button:focus {
 .shape-box-cart {
   display: none;
   margin: 0;
+}
+.only-engraving {
+  display: block !important;
 }

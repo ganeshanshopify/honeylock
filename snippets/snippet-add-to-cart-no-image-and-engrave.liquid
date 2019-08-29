@@ -6,13 +6,14 @@
         <div class="cart-customize-product-container">
           <div class="cart-customize-product-tabs">
             <ul class="list--no-style cart-customize-product-tabs__categories">
-              <li class="text--uppercase cart-customize-image active">image</li>
+              {% comment %} <li class="text--uppercase cart-customize-image active">image</li> {% endcomment %}
               <li class="text--uppercase cart-customize-engraving">engraving</li>
             </ul>
             <!-- START: image upload and engraving and submit to cart -->
             <form action="/cart/add" method="post" id="product-form-{{ product.id }}" enctype= "multipart/form-data"> 
             <ul class="list--no-style cart-customize-product-tabs__content">
-              <li class="cart-customize-product-tabs__content__image active">
+                <!-- commenting out image tab -->
+                <!-- <li class="cart-customize-product-tabs__content__image active">
                 <h3 class="text--uppercase choose-image-heading">choose your image</h3>
                 <p class="para instructions">Upload at least one image</p>
                 <p class="para instructions">Please upload images only up to 5 MB in size</p>
@@ -70,8 +71,8 @@
                 </div>
                 
                 <button type="button" class="text--uppercase button--engrave js-goto-engrave bold">continue to engraving</button>
-              </li>
-              <li class="cart-customize-product-tabs__content__engrave">
+              </li> -->
+              <li class="cart-customize-product-tabs__content__engrave only-engraving">
                 <h3 class="text--uppercase choose-image-heading">select engraving style</h3>
                 <p class="para instructions">Choose a style of engraving to personalize your design.</p>
                 {% comment %} {{product.metafields.product.engraving_image}} {% endcomment %}
@@ -83,9 +84,8 @@
                       <img class="" src="{{ product.metafields.product.engraving_image }}"/>
                     {% endunless %}
                     {% unless product.metafields.product.engraving_image2 == blank %}
-                      <img class="second-image" src="{{ product.metafields.product.engraving_image2 }}"/>
+                      <img class="" src="{{ product.metafields.product.engraving_image2 }}"/>
                     {% endunless %}
-
                   </div>
                   <span id="engraving-text-preview"></span>
                 </div>
@@ -93,17 +93,12 @@
                   {% form 'product', product, id: "engraving-text"%}
                     <div class="form-group line-item-property__field">
                       <label class="label-style" for="engraving-text-input">Engraving</label>
-                        {% if product.metafields.product.engraving_image2 != blank %}
-                          <input type="text"  maxlength="1" id="engraving-text-input" name="properties[Engraving Text1]"/>
-                        {% else%}
-                          <input type="text"  maxlength="5" id="engraving-text-input" name="properties[Engraving Text]"/>
-                        {% endif %}
-
+                      <input type="text"  maxlength="5" id="engraving-text-input" name="properties[Engraving Text]"/>
                     </div>
                     {% unless product.metafields.product.engraving_image2 == blank %}
                       <div class="form-group line-item-property__field">
-                        <label class="label-style" for="engraving-text-input2">Engraving 2</label>
-                        <input type="text"  maxlength="1" id="engraving-text-input2" name="properties[Engraving Text2]"/>
+                        <label class="label-style" for="engraving-text-input2">Engraving</label>
+                        <input type="text"  maxlength="5" id="engraving-text-input2" name="properties[Engraving Text2]"/>
                       </div>
                     {% endunless %}
                     <p class="para label-style">Select font style</p>
