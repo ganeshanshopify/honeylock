@@ -80,7 +80,7 @@
                   
                     {% comment %} <img src="{{'2E7A5557.jpg' | asset_url}}"> {% endcomment %}
                     {% unless product.metafields.product.engraving_image == blank %}
-                      <img class="" src="{{ product.metafields.product.engraving_image }}"/>
+                      <img class="first-image" src="{{ product.metafields.product.engraving_image }}"/>
                     {% endunless %}
                     {% unless product.metafields.product.engraving_image2 == blank %}
                       <img class="second-image" src="{{ product.metafields.product.engraving_image2 }}"/>
@@ -88,6 +88,7 @@
 
                   </div>
                   <span id="engraving-text-preview"></span>
+                  <span id="engraving-text-preview2"></span>
                 </div>
                 <div class="engraving-text-box">
                   {% form 'product', product, id: "engraving-text"%}

@@ -12163,6 +12163,24 @@ label[for="arialFont"] {
   z-index: 3;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
   margin-top: 10px;
+  position:absolute;
+  left:38%;
+  @media (max-width:767px){
+    left: 27%;
+  }
+}
+
+#engraving-text-preview2 {
+  word-wrap: break-word;
+  max-width: 90px;
+  z-index: 3;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
+  margin-top: 10px;
+  position:absolute;
+  right:41%;
+  @media (max-width:767px){
+    right: 30%;
+  }
 }
 
 .engraving-product-image__wrapper {
@@ -12170,7 +12188,7 @@ label[for="arialFont"] {
     position: absolute;
     height: 100%;
     img {
-      width: 100%;
+      width: 49%;
       height: 100%;
       object-position: center;
       object-fit: contain;
@@ -12469,4 +12487,12 @@ button:focus {
 }
 .only-engraving {
   display: block !important;
+}
+
+.first-image{
+  object-position:right !important;
+}
+
+.second-image{
+  object-position:left !important;
 }

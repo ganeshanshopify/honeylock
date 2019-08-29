@@ -5827,6 +5827,17 @@ $("#engraving-text-input").on("keyup keypress", function() {
   inputVal++;
 })
 
+$("#engraving-text-input2").on("keyup keypress", function() {
+  console.log($("#engraving-text-input").val(), inputVal);
+  var engravingTextInput = $("#engraving-text-input2").val();
+  $("#engraving-text-preview2").html(engravingTextInput);
+  if(inputVal == 0 && $("#engravingFontFamily").val() == 0) {
+    $("#engravingFontFamily").val("Georgia");
+    console.log("gerogia")
+  }
+  inputVal++;
+})
+
 	function calcCartValues() {	
 		if($(".js-item-quantity").length > 0) {
 			var qty = document.getElementsByClassName('js-qty__num')[0].value;
