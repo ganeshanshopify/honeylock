@@ -12164,13 +12164,26 @@ label[for="arialFont"] {
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
   margin-top: 10px;
   position:absolute;
+  left:47%;
+  @media (max-width:767px){
+    left: 43%;
+  }
+}
+
+#engraving-text-preview2 {
+  word-wrap: break-word;
+  max-width: 90px;
+  z-index: 3;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
+  margin-top: 10px;
+  position:absolute;
   left:38%;
   @media (max-width:767px){
     left: 27%;
   }
 }
 
-#engraving-text-preview2 {
+#engraving-text-preview3 {
   word-wrap: break-word;
   max-width: 90px;
   z-index: 3;
@@ -12192,9 +12205,21 @@ label[for="arialFont"] {
       height: 100%;
       object-position: center;
       object-fit: contain;
-    }
-   
+    }   
 }
+
+.engraving-product-image__wrapper2 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+  }   
+}
+
 .w-100 {
   width: 100%;
 }
@@ -12455,7 +12480,7 @@ button:focus {
   transform: rotate(45deg);
   height: 292px;
   width: 292px;
-  box-shadow: inset 0 0 0 38px #ffebe7;
+  box-shadow: inset 0 0 0 37px #ffebe7;
   position: absolute;
   left: -17px;
   top: -53px;
