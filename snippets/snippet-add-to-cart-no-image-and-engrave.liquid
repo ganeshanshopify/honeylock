@@ -93,19 +93,23 @@
                 <div class="engraving-text-box">
                   {% form 'product', product, id: "engraving-text"%}
                     <div class="form-group line-item-property__field">
-                      <label class="label-style" for="engraving-text-input">Engraving</label>
+                      
                       {% if product.metafields.product.engraving_image2 != blank %}
-                        <input type="text"  maxlength="1" id="engraving-text-input" name="properties[Engraving Text]"/>
+                        <label class="label-style" for="engraving-text-input">Engraving (Left)</label>
+                        <input type="text"  maxlength="1" id="engraving-text-input" name="properties[Engraving Text]" placeholder="A to Z"/>
                       {% else %}
+                        <label class="label-style" for="engraving-text-input">Engraving</label>
                         <input type="text"  maxlength="6" id="engraving-text-input" name="properties[Engraving Text]"/>
                       {% endif %}  
                     </div>
                     {% unless product.metafields.product.engraving_image2 == blank %}
                       <div class="form-group line-item-property__field">
-                        <label class="label-style" for="engraving-text-input2">Engraving</label>
+                        
                         {% if product.metafields.product.engraving_image2 != blank %}
-                          <input type="text"  maxlength="1" id="engraving-text-input2" name="properties[Engraving Text2]"/>
+                        <label class="label-style" for="engraving-text-input2">Engraving (Right)</label>
+                          <input type="text"  maxlength="1" id="engraving-text-input2" name="properties[Engraving Text2]" placeholder="A to Z"/>
                         {% else %}
+                        <label class="label-style" for="engraving-text-input2">Engraving</label>
                           <input type="text"  maxlength="6" id="engraving-text-input2" name="properties[Engraving Text2]"/>
                         {% endif%}
                       </div>
@@ -146,7 +150,7 @@
                         <td class="js-product-price">{{variant.price | money}}</td>
                       </tr>
                       <tr>
-                        <td><span class="engraving-title">Engraving and photo</span></td>
+                        <td><span class="engraving-title">Engraving</span></td>
                         <td class="free-style">FREE</td>
                       </tr>
                       <tr>
