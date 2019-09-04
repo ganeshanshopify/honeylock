@@ -5594,6 +5594,7 @@ $('#cropImageBtn').on('click', function (ev) {
       var newRandom = getRandomInt(900000);
       $('#item-img-output3').attr('src', resp);
       console.log($("#image-3").attr('src'), $("#customer-id").attr("data-customer"));
+      $($(".js-upload-msg-plus")[0]).css("display", "none");
       $($(".js-upload-msg")[0]).css("display", "none");
       $($(".js-change-msg")[0]).css("display", "flex");
       $(".js-shape-box-1").css("display", "block");
@@ -5624,6 +5625,7 @@ $('#cropImageBtn').on('click', function (ev) {
     }
     else if($('#cropImageBtn').attr("data-id") == "image-4") {
     $('#item-img-output4').attr('src', resp);
+    $($(".js-upload-msg-plus")[1]).css("display", "none");
     $($(".js-upload-msg")[1]).css("display", "none");
     $($(".js-change-msg")[1]).css("display", "flex");
     // $("#image-6").val($("#item-img-output4").attr("src"))
