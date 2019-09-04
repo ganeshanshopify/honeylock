@@ -77,28 +77,37 @@
                 <p class="para instructions">Choose a style of engraving to personalize your design.</p>
                 {% comment %} {{product.metafields.product.engraving_image}} {% endcomment %}
                 <div class="engraving-product-image">
-                  <div class="engraving-product-image__wrapper">
+                  <div class="{% if product.metafields.product.engraving_image2 == blank %}engraving-product-image__wrapper{% else %}engraving-product-image__wrapper2{% endif %}">
                   
                     {% comment %} <img src="{{'2E7A5557.jpg' | asset_url}}"> {% endcomment %}
                     {% unless product.metafields.product.engraving_image == blank %}
-                      <img class="" src="{{ product.metafields.product.engraving_image }}"/>
+                      <img class="{% if product.metafields.product.engraving_image2 == blank %} first-image2 {% else %} first-image {% endif %}" src="{{ product.metafields.product.engraving_image }}"/>
                     {% endunless %}
                     {% unless product.metafields.product.engraving_image2 == blank %}
-                      <img class="" src="{{ product.metafields.product.engraving_image2 }}"/>
+                      <img class="second-image" src="{{ product.metafields.product.engraving_image2 }}"/>
                     {% endunless %}
                   </div>
-                  <span id="engraving-text-preview"></span>
+                  <span id="{% if product.metafields.product.engraving_image2 == blank %}engraving-text-preview2{% else %}engraving-text-preview{% endif %}"></span>
+                  <span id="engraving-text-preview3"></span>
                 </div>
                 <div class="engraving-text-box">
                   {% form 'product', product, id: "engraving-text"%}
                     <div class="form-group line-item-property__field">
                       <label class="label-style" for="engraving-text-input">Engraving</label>
-                      <input type="text"  maxlength="5" id="engraving-text-input" name="properties[Engraving Text]"/>
+                      {% if product.metafields.product.engraving_image2 != blank %}
+                        <input type="text"  maxlength="1" id="engraving-text-input" name="properties[Engraving Text]"/>
+                      {% else %}
+                        <input type="text"  maxlength="6" id="engraving-text-input" name="properties[Engraving Text]"/>
+                      {% endif %}  
                     </div>
                     {% unless product.metafields.product.engraving_image2 == blank %}
                       <div class="form-group line-item-property__field">
                         <label class="label-style" for="engraving-text-input2">Engraving</label>
-                        <input type="text"  maxlength="5" id="engraving-text-input2" name="properties[Engraving Text2]"/>
+                        {% if product.metafields.product.engraving_image2 != blank %}
+                          <input type="text"  maxlength="1" id="engraving-text-input2" name="properties[Engraving Text2]"/>
+                        {% else %}
+                          <input type="text"  maxlength="6" id="engraving-text-input2" name="properties[Engraving Text2]"/>
+                        {% endif%}
                       </div>
                     {% endunless %}
                     <p class="para label-style">Select font style</p>

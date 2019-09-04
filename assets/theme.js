@@ -5791,18 +5791,24 @@ $('#cropImageBtn').on('click', function (ev) {
 						break;
 					case "segoeScriptFont":
             $("#engraving-text-preview").css("font-family", "'Segoe Script W01 Regular V2'");
+            $("#engraving-text-preview2").css("font-family", "'Segoe Script W01 Regular V2'");
+            $("#engraving-text-preview3").css("font-family", "'Segoe Script W01 Regular V2'");
             if($("#engraving-text-input").val() != "") {
             $("#engravingFontFamily").val("Segoe");
             }
 						break;
 					case "arialFont":
             $("#engraving-text-preview").css("font-family", "Arial");
+            $("#engraving-text-preview2").css("font-family", "Arial");
+            $("#engraving-text-preview3").css("font-family", "Arial");
             if($("#engraving-text-input").val() != "") {
             $("#engravingFontFamily").val("Arial");
             }
 						break;
 					default:
             $("#engraving-text-preview").css("font-family", "'Gill Sans Nova',sans-serif");
+            $("#engraving-text-preview2").css("font-family", "'Gill Sans Nova',sans-serif");
+            $("#engraving-text-preview3").css("font-family", "'Gill Sans Nova',sans-serif");
             if($("#engraving-text-input").val() != "") {
             $("#engravingFontFamily").val("Arial");
             }
@@ -5820,6 +5826,7 @@ $("#engraving-text-input").on("keyup keypress", function() {
   console.log($("#engraving-text-input").val(), inputVal);
   var engravingTextInput = $("#engraving-text-input").val();
   $("#engraving-text-preview").html(engravingTextInput);
+  $("#engraving-text-preview2").html(engravingTextInput);
   if(inputVal == 0 && $("#engravingFontFamily").val() == 0) {
     $("#engravingFontFamily").val("Georgia");
     console.log("gerogia")
@@ -5830,7 +5837,7 @@ $("#engraving-text-input").on("keyup keypress", function() {
 $("#engraving-text-input2").on("keyup keypress", function() {
   console.log($("#engraving-text-input").val(), inputVal);
   var engravingTextInput = $("#engraving-text-input2").val();
-  $("#engraving-text-preview2").html(engravingTextInput);
+  $("#engraving-text-preview3").html(engravingTextInput);
   if(inputVal == 0 && $("#engravingFontFamily").val() == 0) {
     $("#engravingFontFamily").val("Georgia");
     console.log("gerogia")
